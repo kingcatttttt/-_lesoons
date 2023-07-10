@@ -2,13 +2,16 @@
 using namespace std;
 
 int main()
-{
-   int a;
-   int b;
-   int c;
-   cin >> a >> b >> c;
-   int sum = a + b + c;
-   int second = a * b * c;
-   double thre = (double)(a + b + c) / 3;
-   cout  << sum  << "\t" << second << "\t"  << thre <<endl;
+{  
+    cout << "ведите число и оно провериться на четность" <<endl;
+    int number;
+    cin >> number;
+    if(number % 2 == 0 )
+    {
+        cout << number << " число четное" <<endl;
+    }
+    else
+    {
+        cout << number << " число не четное" <<endl;
+    }
 }
