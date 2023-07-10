@@ -3,15 +3,17 @@ using namespace std;
 
 int main()
 {  
-    cout << "ведите число и оно провериться на четность" <<endl;
-    int number;
-    cin >> number;
-    if(number % 2 == 0 )
+    int a;
+    cin >> a;
+    switch (a)
     {
-        cout << number << " число четное" <<endl;
-    }
-    else
-    {
-        cout << number << " число не четное" <<endl;
+    case 1:
+        cout << "a = 1" <<endl;
+        break; 
+    case 2:
+    cout << "a = 2" <<endl;
+    default:
+    cout << "я не знаю" <<endl;
+        break;
     }
 }
