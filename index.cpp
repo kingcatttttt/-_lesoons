@@ -3,66 +3,39 @@ using namespace std;
 
 int main()
 {
-    char a;
-    int dia,divi;
-    int i = 0;
-    int type;
-    char change;
-    cout << "ведите  число чтоб узнать єго диапозон на четность или на ваш вариант" <<endl;
-    cin >> dia;
-    if (dia != NULL)
-    {
-        cout << "ведите число на которое будет делиться без остачи" <<endl;
-        cin >> divi;
-    }
-
- if( divi != NULL)
- {
-  cout << "виберите режим 1 = вертикальний 2 = хоризонтальний" <<endl;
-   cin >> type;
- }
-
- if( type != NULL)
- {
-  cout << "виводить числа которие не деляться цело y/n" <<endl;
-   cin >> change;
- }
-
- if(change == 'y')
- {
-  a = 1;
- }
-  switch (type)
+  int i = 0;
+  int type;
+  char symbol;
+  int raz;
+  cout << "ведите симбол" <<endl;
+  cin >> symbol;
+  cout << "ведите такое число скольно ви хотите чтоб разb вивело симбвол" <<endl;
+  cin >> raz;
+  cout << "виберите режим: 1 = vertical; 2 = horinzontal" <<endl;
+  cin >> type;
+  if(type != NULL)
+  {
+    switch (type)
   {
   case 1:
-   while (i <= dia)
+   while (i <= raz)
   {
-    if(i % divi == 0)
-    {
-      cout << "число " << i << " делиться на " << divi << " без остачи;"<<endl;
-    } 
-    else if( a != 1)
-    {
-      cout << "число " << i << " не делиться на " << divi << " без остачи;" <<endl;
-    }
+    cout << symbol <<endl;
     i++;
   }
     break;
     case 2:
-     while (i <= dia)
+    while (i <= raz)
   {
-    if(i % divi == 0)
-    {
-      cout << "число " << i << " делиться на " << divi << " без остачи;";
-    } 
-    else if( a != 1)
-    {
-      cout << "число " << i << " не делиться на " << divi << " без остачи;";
-    }
+    cout << symbol ;
     i++;
   }
+  break;
   
   default:
+  cout <<"not value" <<endl;
     break;
   }
-    }   
+  }
+  
+}   
