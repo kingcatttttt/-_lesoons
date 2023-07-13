@@ -9,7 +9,7 @@ int main()
   int raz;
   cout << "ведите симбол" <<endl;
   cin >> symbol;
-  cout << "ведите такое число скольно ви хотите чтоб разb вивело симбвол" <<endl;
+  cout << "ведите такое скольно ви хотите чтоб вивело симбвол" <<endl;
   cin >> raz;
   cout << "виберите режим: 1 = vertical; 2 = horinzontal" <<endl;
   cin >> type;
@@ -21,14 +21,12 @@ int main()
    while (i <= raz)
   {
     cout << symbol <<endl;
-    i++;
   }
     break;
     case 2:
     while (i <= raz)
   {
     cout << symbol ;
-    i++;
   }
   break;
   
