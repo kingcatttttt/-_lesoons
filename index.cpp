@@ -5,26 +5,28 @@ using namespace std;
 using namespace std;
 
 int main()
-{  
-    int width,heigt;
-    cin >> width;
-    cin >> heigt;
-  for (int i = 0; i <= width -1; i++)
+{   
+  int width,height;
+  cout << "ведите число которое будет висотой" <<endl;
+  cin >> width;
+  cout << "ведите число которое будет широтой" <<endl;
+  cin >> height;
+
+  for (int i = 0; i < width; i++)
   {
-    // висота
-
-    for (int j = 0; j < heigt; j++)
+    for (int j = 0; j <= height; j++)
     {
-        cout <<"*";
-        if (j == heigt - 1)
-        {
-            cout <<endl;
-        }        
-
+      if (j == height)
+      {
+        cout <<endl;
+      }
+      else
+      {
+        cout << "*";
+      }
+      
     }
     
   }
   
-    
-
 }
