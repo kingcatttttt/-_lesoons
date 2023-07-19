@@ -1,4 +1,1 @@
-   //  else; 
-    // {
-    //     cout << "ви жирний" <<endl;
-    // }
+sort(arr, arr + lenght);
