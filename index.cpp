@@ -4,40 +4,21 @@ using namespace std;
 
 int main() 
 {
-    cout << "weclome to generation numbers" <<endl;
-    int SIZE = 0;
-    cin >> SIZE;
-    int arr[1000] = {};
-    srand(time(NULL));
-    for (int l = 0; l < SIZE; l++)
-    {
-        int random = rand() % SIZE;
-        arr[l] = random;
-    }
+    cout << "ведите число которого ви хотите узнать квадратний корень" <<endl;
     
-    bool value = true;
-    int lenght = sizeof(arr) / sizeof(arr[0]);
-    for (int  i = 0; i < lenght; i++)
+    int a;
+    cin >> a;
+    for (int i = 0; i < i + 1 ; i++)
     {
-        value = true;
-        for (int  j = 0; j < i; j++)
+        if (a == (i * i))
         {
-            if (arr[j] == arr[i])
-            {
-                value = false;
-                break;
-            }
+             cout << i <<endl;
+            break;
             
         }
-        if (value)
-        {
-            cout << arr[i]  <<endl;
-
-        }
+       
         
     }
-    cout << "        |----------------|           " <<endl;
-    cout <<  "\t"<<    "| "<<lenght<< "           | "  <<endl;
-    cout << "        |----------------|           " <<endl;
-;
+    
+    
 }
