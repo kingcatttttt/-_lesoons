@@ -1,1 +1,1 @@
-sort(arr, arr + lenght);
+cout << a[i];
