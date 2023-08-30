@@ -1,1 +1,1 @@
-cout << a[i];
+inline

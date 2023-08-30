@@ -1,26 +1,21 @@
 #include <iostream>
 using namespace std;
 
+
+
 int main()
 {
- int arr[] = {1,2,3,4,5,6,7,4,3,6,8};
-    int lenght = sizeof(arr) / sizeof(arr[0]);
-    // sort(arr,arr + lenght);
-    // for (int i = 0; i < lenght; i++)
-    // {
-    //     cout << arr[i] <<endl;
-    // }
-int number = arr[0];
-for (int i = 1; i < lenght; i++)
-{
-    if (number > arr[i])
+    cout << "ведите ваше колияество хромосом" <<endl;
+    int a;
+    cin >> a;
+    if (a == 47)
     {
-        number = arr[i];
+        cout << "ви едик" <<endl;
     }
-}
-cout << number <<endl;
-
+    else
+    {
+        cout << "ви врете ви едик" <<endl;
+    }
     
-
     
 }
